@@ -2,7 +2,7 @@ import FWCore.ParameterSet.Config as cms
 
 metandpuanalstep4 = cms.EDAnalyzer('HATS_MET_AnalysisStep4',
                                    doprints = cms.bool(False),
-                                   metFilters = cms.InputTag("TriggerResults","","PAT"),
+                                   metFilters = cms.InputTag("TriggerResults","","RECO"),
                                    beamHaloFilterSel = cms.string("Flag_globalSuperTightHalo2016Filter"),
                                    hbheFilterSel = cms.string("Flag_HBHENoiseFilter"),
                                    hbheIsoFilterSel = cms.string("Flag_HBHENoiseIsoFilter"),
